@@ -13,10 +13,6 @@ DONE 2.	Display of the corresponding graph in a matrix form (value matrix).
     - no cycle,
     - no negative edges.
 
-Then :
-
-If those properties are satisfied, compute the calendars:
-
 4.	Compute the ranks for all vertices
 
 --- WE HAVE 10 YOUHOU ---
@@ -26,4 +22,4 @@ If those properties are satisfied, compute the calendars:
 
 6.	Compute the critical path(s) and display it or them
 
-Your program must be capable to « loop » on the constraint tables you’ve prepared. It would be a very bad idea to stop the program and launch it again every time you want to use a different constraint table. If this is the case, it will results in points off.
+DONE Your program must be capable to « loop » on the constraint tables you’ve prepared. It would be a very bad idea to stop the program and launch it again every time you want to use a different constraint table. If this is the case, it will results in points off.

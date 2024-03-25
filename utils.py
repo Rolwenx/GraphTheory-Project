@@ -29,12 +29,10 @@ def create_dict(file_path):
             constraints.append(line[2:])
             # add the vertex to the graph
             graph[vertex] = {'predecessors': [], 'successors': [], 'duration': duration, 'rank': -1}
-            print(line)
 
     # add omega (n+1) vertex to the graph
     graph[n+1] = {'predecessors': [], 'successors': [], 'duration': 0, 'rank': -1}
 
-    print(constraints)
     # add the constraints to the graph
     n = 0
     for constraint in constraints:
@@ -81,9 +79,12 @@ def value_matrix(graph):
     # If there is no edge, the duration is *
     # The matrix is displayed in a table format
     n = len(graph)
-    print("",end='   ')
+    print("",end='    ')
     for vertex in graph:
-        print(vertex,end='  ')
+        if vertex>=10:
+            print(vertex,end='  ')
+        else:
+            print(vertex,end='   ')
     matrix = [['*' for i in range(n)] for j in range(n)]
     for vertex in graph:
         for successor in graph[vertex]['successors']:
@@ -91,9 +92,11 @@ def value_matrix(graph):
 
     for i in range(n):
         print()
+        if i<10:
+            print(' ',end='')
         print(i,end='  ')
         for j in range(n):
-            print(matrix[i][j],end='  ')
+            print(matrix[i][j],end='   ')
 
     print()
 
