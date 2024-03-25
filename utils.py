@@ -66,3 +66,36 @@ def print_graph(graph):
         print(f"Duration: {graph[vertex]['duration']}")
         print(f"Rank: {graph[vertex]['rank']}")
         print()
+
+def print_vertices(graph):
+    # Print number of vertices and edges
+    # Print all vertices like this: vertice1 -> vertice2 = duration
+    # example : 0 -> 1 = 5
+    for vertex in graph:
+        for successor in graph[vertex]['successors']:
+            print(f"{vertex} -> {successor} = {graph[vertex]['duration']}")
+
+def value_matrix(graph):
+    # Create and display the value matrix of the graph
+    # The value matrix is a matrix where each element is the duration of the edge between the two vertices
+    # If there is no edge, the duration is *
+    # The matrix is displayed in a table format
+    n = len(graph)
+    print("",end='   ')
+    for vertex in graph:
+        print(vertex,end='  ')
+    matrix = [['*' for i in range(n)] for j in range(n)]
+    for vertex in graph:
+        for successor in graph[vertex]['successors']:
+            matrix[vertex][successor] = graph[vertex]['duration']
+
+    for i in range(n):
+        print()
+        print(i,end='  ')
+        for j in range(n):
+            print(matrix[i][j],end='  ')
+
+    print()
+
+
+

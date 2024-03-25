@@ -1,10 +1,10 @@
-1.	Reading a constraint table presented in a .txt file and storing it in memory
+DONE 1.	Reading a constraint table presented in a .txt file and storing it in memory
 
 On each line, the first number is the task number,
 the second is its duration,
 and the other numbers (if present) are the constraints (predecessors) :
 
-2.	Display of the corresponding graph in a matrix form (value matrix).
+DONE 2.	Display of the corresponding graph in a matrix form (value matrix).
     Warning: the display must be done from memory, not directly from reading the .txt file.
     The graph must contain the two fictitious tasks alpha and omega
     (labeled 0 and N+1 where N is the number of tasks).
