@@ -9,17 +9,21 @@ DONE 2.	Display of the corresponding graph in a matrix form (value matrix).
     The graph must contain the two fictitious tasks alpha and omega
     (labeled 0 and N+1 where N is the number of tasks).
 
+Roland / Roxanne / Rosine / Baleine / Grosse vache
 3.	Check the necessary properties of the graph such that it can serve as a scheduling graph
     - no cycle,
     - no negative edges.
 
+Yoke
 4.	Compute the ranks for all vertices
 
 --- WE HAVE 10 YOUHOU ---
 
+Nico + Aquamyne
 5.	Compute the earliest dates, the latest dates, and the floats.
     For the computation of the latest dates, assume that the latest date of the end of project coincides with its earliest date.
 
+Max
 6.	Compute the critical path(s) and display it or them
 
 DONE Your program must be capable to « loop » on the constraint tables you’ve prepared. It would be a very bad idea to stop the program and launch it again every time you want to use a different constraint table. If this is the case, it will results in points off.
